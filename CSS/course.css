@@ -81,6 +81,7 @@
     color:#212121;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
 }
 .buttonStyle:hover{
 
@@ -90,4 +91,7 @@
 }
 footer{
     margin-top: 20px;
+}
+.course-points a {
+    text-decoration: none;
 }
