@@ -16,16 +16,6 @@ export function getYearData(yearCount) {
     return yearData[yearCount - 1] || null;
 };
 
-/**
- * Creates a list of module names for a given year and course.
- * 
- * @param {number} yearCount - The year for which to retrieve modules.
- * @param {HTMLElement} parentEL - The parent element to append the list items to.
- * @param {object} currentCourseObj - The current course object.
- * @returns {HTMLElement} The updated parent element.
- */
-
-
 export const courses = [
     { courseId: 'BCom', duration: 4, code: 1 },
     { courseId: 'HC', duration: 1, code: 2 },
