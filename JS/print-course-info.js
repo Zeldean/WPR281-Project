@@ -9,32 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/**
+ * Handles the print button click event. 
+ * It shows the course details, applies a specific print stylesheet, and triggers the print dialog.
+ * @param {Event} event - The click event object
+ */
 function handlePrintClick(event) {
-    
-    const printStyle = `CSS/view-${event.target.id}.css`;
-    console.log(printStyle)
-    const styleLocation = document.getElementById('dynamic-style');
-
-    const details = document.getElementById(`course${event.target.getAttribute('data-id')}-details`)
-    details.classList.remove('hidden');
-
-    let table = document.querySelector(`#course${event.target.getAttribute('data-id')}-details .styled-table`);
-    let children = table.children;
-
-    for (let i = 0; i < children.length; i++) {
-        children[i].style.display = 'table-row-group';
+    const courseId = event.target.getAttribute('data-id');
+    const printStyleUrl = `CSS/view-${event.target.id}.css`;
+  
+    console.log(printStyleUrl);
+  
+    const detailsElement = document.getElementById(`course${courseId}-details`);
+    detailsElement.classList.remove('hidden');
+  
+    const tableElement = detailsElement.querySelector('.styled-table');
+    const tableRows = tableElement.children;
+  
+    for (const row of tableRows) {
+        row.style.display = 'table-row-group';
     };
-
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = printStyle;
-    link.onload = function() {
+  
+    const linkElement = document.createElement('link');
+    linkElement.rel = 'stylesheet';
+    linkElement.href = printStyleUrl;
+  
+    linkElement.onload = () => {
         window.print();
+        // Remove the link element after printing
+        linkElement.remove();
     };
-    
-    
-    styleLocation.appendChild(link);
-    setTimeout(() => {
-        styleLocation.innerHTML = null;    
-    }, 1000);    
+  
+    const styleLocation = document.getElementById('dynamic-style');
+    styleLocation.appendChild(linkElement);
 };
