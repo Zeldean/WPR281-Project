@@ -1,0 +1,20 @@
+header {
+    display: none;
+}
+.course-title:not(#becom) {
+    display: none;
+}
+footer {
+    display: none;
+}
+.buttonStyle {
+    display: none;
+}
+#becom {
+    border: none !important;
+    box-shadow: none;
+}
+#becom .course1-details {
+    display: block;
+    height: auto;
+}

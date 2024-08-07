@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Container{
+    width: 92%;
+    padding: 15px 0;
+    margin: 0 auto;
+    background-size: contain;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+
+}
+#sideBar {
+    width: 100%;
+    grid-column: 1;
+}
+.mod {
+    position: relative;
+    width: 88%;
+    height: calc(300px - 30px);
+    background: rgba(230, 134, 24, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+    border-right: solid orange; 
+    border-bottom: solid orange;
+    margin: 8px 0;  
+}
+.top {
+    background-image: url(../IMG/HU-Prog-IT-Bachelor.webp);
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+
+    transition: all 0.5s;
+}
+.mid {
+    position: absolute;
+    bottom: 40px;
+    padding: 10px;
+    text-align: center;
+}
+.mid h2 {
+    margin-bottom: 20px;
+}
+.years {
+    display: none;
+}
+.mod:hover {
+    transition: 0.5s;
+    position: relative;
+    width: 90%;
+    height: calc(300px + 90px);
+    background: rgba(230, 134, 24, 0.5);
+    float: left;
+    margin: 15px;
+    
+}
+.mod:hover .top {
+    z-index: 4;    
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.mod:hover .mid {
+    display: none;
+}
+.mod:hover h1 {
+    align-self: end;
+    font-size: 4em;
+    margin: 0;
+}
+.mod:hover .years {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    margin-top: 300px;
+}
+.mod .years button {
+    padding: 8px;
+    background-color: rgb(115, 149, 223);
+    border-radius: 12px;
+    border: none;
+    box-shadow: 3px 3px 1.5px 1.5px rgba(0, 0, 0, 0.486);
+}
+.mod .years button:hover {
+    background-color: rgb(38, 69, 136);
+    color: white;
+    font-weight: bold;
+}
+#output {
+    padding: 10px;
+    background-color: rgba(199, 149, 58, 0.5);
+    border-radius: 20px;
+    border-top: solid orange;
+    border-left: solid orange;
+    height: fit-content;
+    min-height: 500px;
+    position: sticky;
+    top: 10px;
+    bottom: 10px;
+    z-index: 0;
+}
+#output ul {
+    width: 60%;
+    margin: 80px auto;
+    padding: 0;
+}
+#output ul li {
+    list-style: none;
+    padding: 8px;
+    /* border: solid 2px; */
+    background-color: rgb(255, 194, 82);
+    border-radius: 12px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#output ul li:hover{
+    cursor: pointer;
+}
+#output h1 {
+    text-align: center;
+}
+
+
+.completed {
+    background-color: #236321 !important;
+    color: rgb(252, 215, 146);
+}

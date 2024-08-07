@@ -1,0 +1,20 @@
+header {
+    display: none;
+}
+.course-title:not(#hc) {
+    display: none;
+}
+footer {
+    display: none;
+}
+.buttonStyle {
+    display: none;
+}
+#hc {
+    border: none !important;
+    box-shadow: none;
+}
+#hc .course2-details {
+    display: block;
+    height: auto;
+}

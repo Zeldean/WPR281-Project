@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.iframeAuto {
+    overflow-y: visible;
+}
+#course-list {
+    margin: 20px;
+    padding: 1%;
+}
+.course-title {
+    border-bottom: solid aqua;
+    border-right: solid aqua;
+    padding: 10px;
+    margin: 20px 5%;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.575);
+    box-shadow: 6px 6px 10px 0px rgba(68, 143, 255, 0.5);
+}
+.course-heading{
+    grid-column: 1 /span 2;
+    padding: 1rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+}
+.course-description{
+    text-align: justify;
+    padding-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color:#212121;
+}
+.course-description span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color:#212121;
+}
+
+.course-points ul{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left:10px;
+    border-left: 5px solid red;
+    background-color: #1a1a1a;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    width: 250px;
+    height: 200px;
+    
+}
+.course-points li{
+    list-style: square;
+    padding: 0.5rem;
+    list-style-type: none;
+    font-family: sans-serif;
+    
+    
+}
+.course-points span{
+
+    color: #24a0ed;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+.course-info{
+    display: grid;
+    grid-template-columns: 2fr 6fr;    
+    margin: 2rem 0;
+}
+.buttonStyle{
+    margin-left:60px;
+    margin-top:10px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: 2px solid #212121;
+    color:#212121;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonStyle:hover{
+
+    border-color: white;
+    background-color: #212121;
+    color:white
+}
+footer{
+    margin-top: 20px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>    
+    <script src="JS/script.js"></script>
+    <script src="JS/print-course-info.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="CSS/course_table.css">
+    <link rel="stylesheet" href="CSS/course.css">
+    <link rel="stylesheet" href="CSS/body-backgroand.css">
+</head>
+<body>
+    <div id="dynamic-style">
+
+    </div>
+    <header id="header">
+        <iframe id="header-iframe" class="iframeAuto" data-id="header" src="header.html" frameborder="0" width="100%"></iframe>
+        <script src="JS/iframe-resize.js"></script>        
+    </header>
+    
+    <main>
+        <div id="course-list">
+            <div id="becom" class="course-title" data-course="course1"> <!--This is the first course's section including the description and details-->
+                <h2 id="Bcomp" class="course-heading">Bachelor of Computing</h2>
+                <div id="course1-details" class="course-details hidden">
+                    <!-- JS will create a table here -->
+                </div>
+                <div class="course-info"> 
+                    <div class="course-points">
+                        <ul>
+                            <li><span class="material-symbols-outlined">
+                                calendar_today
+                                </span>
+                                Duration: 4 years</li>
+                            <li><span class="material-symbols-outlined">
+                                create_new_folder
+                                </span>NQF: Level 8</li>
+                            <li><span class="material-symbols-outlined">
+                                folder_open
+                                </span>Credits: 506</li>
+                            <li><span class="material-symbols-outlined">
+                                schedule
+                                </span>SAQA ID: 62689</li>
+                        </ul>                        
+                        <a href="enrolementform.html"><button type="button" id="bcomButton" class="buttonStyle">Enrollment</button></a>
+                        <button id="print-BCom" class="printButton buttonStyle" data-id="1">Print</button>
+                        
+                    </div>                     
+                    <p class="course-description">
+                        Our Bachelor of Computing degree will teach you the essential computing skills of troubleshooting and formulating viable solutions. Additionally, you will learn to apply theories and integrate them in real-world environments, across multiple disciplines, by presenting best practices and solutions. <br><br><span>OVERVIEW</span><br></br> You will gain sound theoretical knowledge grounded in real-world applications. Furthermore, the practical assignments and projects you will complete are congruent with daily practices in the working world, providing you with business-specific and soft skills. These skills include communication skills, customer satisfaction training, the ability to work as part of a team, and the ability to teach others. Moreover, in the fourth year of your Bachelor of Computing, you will have the remarkable opportunity to complete an internship at a national or international company. Additionally, you will conduct academic research and present your findings in a formal dissertation.
+                    </p>                   
+                </div>                
+            </div>
+                
+            <div id="hc" class="course-title" data-course="course2">
+                <h2 id="CIT" class="course-heading">Higher Certificate</h2>
+                <div id="course2-details" class="course-details hidden">
+                    <!-- JS will create a table here -->
+                </div>
+                <div class="course-info">  
+                    <div class="course-points">
+                        <ul>
+                            <li><span class="material-symbols-outlined">
+                                calendar_today
+                                </span>
+                                Duration: 1 years</li>
+                            <li><span class="material-symbols-outlined">
+                                create_new_folder
+                                </span>NQF: Level 6</li>
+                            <li><span class="material-symbols-outlined">
+                                folder_open
+                                </span>Credits: 120</li>
+                            <li><span class="material-symbols-outlined">
+                                schedule
+                                </span>SAQA ID: 71850</li>
+                        </ul>
+                        <a href="enrolementform.html"><button type="button" id="hcButton" class="buttonStyle">Enrollment</button></a>
+                        <button id="print-HC" class="buttonStyle printButton" data-id="2">Print</button>
+                    </div>                    
+                    <p class="course-description">
+                        This Higher Certificate in IT is created in line with Belgium Campus’s mission to train young people to understand, use and apply ICT effectively, efficiently and in ethical ways, leading to gainful employment. <br></br><span>OVERVIEW</span><br></br> The amount of data in the world is increasing at an exponential rate.
+                        The emergence of big data has completely transformed how companies do business and understand their customers, with companies using large volumes of data to identify trends and patterns and predict future consumer behaviour. With the above in mind, it is not surprising that the demand for skilled data experts with advanced database skills is ever-increasing. This qualification will give you these skills and allow you to enter the job market quickly. The knowledge and skills you gain will equip you to solve operational business problems in the data science space, allowing you to thrive in today’s business environment.
+                    </p>                    
+                </div>
+            </div>
+
+            <div id="diploma" class="course-title" data-course="course3">
+                <h2 id="DIT" class="course-heading">Diploma</h2>
+                <div id="course3-details" class="course-details hidden">
+                    <!-- JS will create a table here -->
+                </div>
+                <div class="course-info">
+                    <div class="course-points">
+                        <ul>
+                            <li><span class="material-symbols-outlined">
+                                calendar_today
+                                </span>
+                                Duration: 3 years</li>
+                            <li><span class="material-symbols-outlined">
+                                create_new_folder
+                                </span>NQF: Level 6</li>
+                            <li><span class="material-symbols-outlined">
+                                folder_open
+                                </span>Credits: 360</li>
+                            <li><span class="material-symbols-outlined">
+                                schedule
+                                </span>SAQA ID: 120097</li>
+                        </ul>
+                        <a href="enrolementform.html"><button type="button" id="dipButton" class="buttonStyle">Enrollment</button></a>
+                        <button id="print-Diploma" class="buttonStyle printButton"  data-id="3">Print</button>
+                    </div>                      
+                    <p class="course-description">
+                        This empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.<br></br> <span>OVERVIEW</span><br></br> Our Diploma in Information Technology consists of a generic foundation phase and a specialisation phase. The foundation phase gives insight into the field of information technology, while the specialisation phase is career oriented.
+
+                         This academic programme will transform you into a well-rounded professional through a strong focus on knowledge, execution, and professional and practical skills. You will also have the incredible opportunity to complete 6 months of in-service training at an external company or in a simulated work environment.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div id="bit" class="course-title" data-course="course4">
+                <h2 id="BIT" class="course-heading">Bachelor of Information Technology</h2>
+                <div id="course4-details" class="course-details hidden">
+                    <!-- JS will create a table here -->
+                </div>
+                <div class="course-info"> 
+                    <div class="course-points">
+                        <ul>
+                            <li><span class="material-symbols-outlined">
+                                calendar_today
+                                </span>
+                                Duration: 3 years</li>
+                            <li><span class="material-symbols-outlined">
+                                create_new_folder
+                                </span>NQF: Level 7</li>
+                            <li><span class="material-symbols-outlined">
+                                folder_open
+                                </span>Credits: 360</li>
+                            <li><span class="material-symbols-outlined">
+                                schedule
+                                </span>SAQA ID: 94121</li>
+                        </ul>
+                        <a href="enrolementform.html"><button type="button" id="bitButton" class="buttonStyle">Enrollment</button></a>
+                        <button id="print-BIT" class="buttonStyle printButton"  data-id="4">Print</button>
+                    </div>                     
+                    <p class="course-description">
+                        A bachelor’s degree remains the entry standard in many professional careers. Its long-term benefits make it well worth the initial investment as it allows you professional entry into some of the top names in IT. It will also give you the knowledge and skills to create your own enterprise within the sector. Overall, an IT degree is a worthwhile investment in your future.<br></br> <span>OVERVIEW</span> <br></br>This IT degree focuses on information systems modules and will provide you with foundational knowledge in software engineering and business intelligence. You will cover an extensive range of topics, from mobile and wireless networks to artificial intelligence and intelligent systems.
+
+                        By placing a strong focus on knowledge, execution, and professional skills, this IT degree will transform you into a complete professional with a range of interesting opportunities to explore, including the development of mobile and web-based apps and even game development. 
+                    </p>
+                </div>
+            </div>
+        </div> <!--course-list [close]-->
+       <script type="module" src="JS/create-tables.js"></script> 
+    </main>
+    
+
+    <footer>
+        <iframe id="footer-iframe" class="iframeAuto" data-id="footer" src="footer.html" frameborder="0" width="100%"></iframe>        
+    </footer>  
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/enrolement.css">
+    <link rel="stylesheet" href="CSS/body-backgroand.css">
+</head>
+<body>
+    <header>
+        <iframe id="header-iframe" src="header.html" frameborder="0" width="100%"></iframe>
+        <script src="JS/iframe-resize.js"></script>
+    </header>
+    <div class="container">
+        <h2 data-value ="ENROLlEMENTFORM" >ENROLLEMEN FORM</h2>
+        <form id="enrollmentForm" >
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required >
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"  required >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="belgiumcampus@gmail.com"  required >
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="000-000-0000"  required >
+            
+            <label for="course">Course:</label>
+            <select style="font-size: medium;" name="courseDropdown" id="course" required>
+                <option value="" disabled selected hidden>Please select a cource.</option>
+                <option value= "Bachelor of Computing">Bachelor of Computing</option>
+                <option value= "Higher Certificate" >Higher Certificate</option>
+                <option value= "Diploma" >Diploma</option>
+                <option value= "Bachelor of Information Technology" >Bachelor of Information Technology</option>
+            </select>
+
+            <label id="startDateLabel" style="display: none;">Start Date: <span id="startDate"></span></label>
+
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" placeholder="Enter your ID number." name="ID"  required >
+            <label style="font-size: small;">Please upload a pdf or image of your ID below.</label>
+            <input  type="file" id="IDpic" name="IDphoto" accept=".pdf, image/*" >
+
+            <label for="file">National Seniour Certificate (NSC): <br>
+            <p style="font-size: small;">Please upload a pdf or image of your final NSC. results below.</p></label>
+            <input type="file" id="file" accept=".pdf, image/*" name="NSCphoto" >
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button id="resetbutton" type="reset">Reset</button>
+            <button  type="submit" id="submitButton">Submit</button>
+
+            <div id="border-box">
+     
+                 <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Congratulations:</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                 
+                    <div class="modal-boddy">
+                        <p style="margin: 10px;"><span>You have successfully enrolled.</span><br>
+                           <span>You start class in <span style="color: crimson;" id="daysToStart"></span> days.</span><br>
+                           <span>on: <samp style="font-size: large; color: crimson;" id="dayOfStart"></samp>.</span><br>
+                           <span>See downloaded pdf file as proof of redgestration.</span>
+                        </p>
+                    </div>
+                 </div>
+            <div  id="overlay"></div>
+            </div>
+
+
+        </form>
+       
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="JS/enrolementscript.js"></script>
+
+    <footer>
+        <iframe id="footer-iframe" class="iframeAuto" data-id="footer" src="footer.html" frameborder="0" width="100%" height="178px"></iframe>
+        <script src="JS/iframe-resize.js"></script>
+    </footer>
+</body>
+</html>

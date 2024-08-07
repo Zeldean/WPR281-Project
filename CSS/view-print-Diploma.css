@@ -1,0 +1,20 @@
+header {
+    display: none;
+}
+.course-title:not(#diploma) {
+    display: none;
+}
+footer {
+    display: none;
+}
+.buttonStyle {
+    display: none;
+}
+#diploma {
+    border: none !important;
+    box-shadow: none;
+}
+#diploma .course3-details {
+    display: block;
+    height: auto;
+}
